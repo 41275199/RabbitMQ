@@ -1,0 +1,22 @@
+
+DROP TABLE IF EXISTS `order`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `order` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `order_num` varchar(100) NOT NULL,
+  `status` int(11) DEFAULT '0',
+  `create_time` datetime DEFAULT NULL,
+  `update_time` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+
+
+LOCK TABLES `order` WRITE;
+
+INSERT INTO `order` VALUES (1,'6df4c406-7861-4142-94fa-97a1c2f6033b',2,'2022-02-20 00:48:49','2022-02-20 00:49:49'),(2,'dda24a53-3b1e-4686-9add-6e5f16be92d4',2,'2022-02-20 00:48:54','2022-02-20 00:49:55'),(3,'0ab83c99-9939-4266-bf4f-0b1240180837',2,'2022-02-20 00:48:56','2022-02-20 00:49:56'),(4,'0f8170e6-f6a9-4daa-9115-712edfdb5ef7',2,'2022-02-20 00:48:56','2022-02-20 00:49:56'),(5,'9deefb96-e35b-4f75-8c55-c72cf9c1af54',2,'2022-02-20 00:48:57','2022-02-20 00:49:57'),(6,'73f39033-ad47-48f9-8404-4d73e353a35a',2,'2022-02-20 00:48:57','2022-02-20 00:49:57'),(7,'556aa2b9-a6c8-4863-8fe4-9066b496cdc1',2,'2022-02-20 00:48:58','2022-02-20 00:49:58'),(8,'3e4fb3df-5239-4bf1-8b75-48a872d172d6',2,'2022-02-20 00:48:58','2022-02-20 00:49:58'),(9,'37de8762-a607-4dee-91ad-89145b2354d2',2,'2022-02-20 00:48:59','2022-02-20 00:49:59'),(10,'1ce9596f-c36d-413e-aa5f-44a594179000',2,'2022-02-20 00:48:59','2022-02-20 00:49:59'),(11,'822c3ec3-c255-4865-8a4b-75cc671286fb',2,'2022-02-20 00:49:00','2022-02-20 00:50:00'),(12,'adff2cfa-3a22-4963-b163-b3a9e36ac09e',2,'2022-02-20 00:49:00','2022-02-20 00:50:01'),(13,'bdb449cd-b64d-43ae-bd50-80f83bb6d3a1',2,'2022-02-20 00:49:01','2022-02-20 00:50:01'),(14,'65893bae-4662-4322-a01c-3c4db9be3be3',2,'2022-02-20 00:49:01','2022-02-20 00:50:02');
+
+UNLOCK TABLES;
+
